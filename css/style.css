@@ -1,4 +1,4 @@
-* Fonts */
+/* Fonts */
 @font-face {
   font-family: 'Nexa_bold';
   src: url('../fonts/Nexa-Bold.eot');
@@ -45,7 +45,8 @@ textarea:focus {
   background-color: #e3a103;
 }
 /* Оформление форм */
-.form-input {
+.form-input,
+.form-textarea {
   display: block;
   margin: 2rem 0;
   width: 100%;
@@ -407,8 +408,19 @@ section {
   font-size: 1.9rem;
 }
 /* Опасения */
+.problemes {
+  position: relative;
+}
+.problemes-women {
+  position: absolute;
+  width: 30rem;
+  margin-left: -19rem;
+  bottom: 0;
+  left: 50%;
+}
 .problemes-list {
   border: 4px solid;
+  margin-bottom: 3rem;
   padding: 2rem;
   min-height: 36rem;
 }
@@ -447,9 +459,99 @@ section {
   background: url(../img/problems/problem.png) center no-repeat;
   background-size: 70%;
 }
+.problemes-list-good {
+  border-color: #46b814;
+}
 .problemes-list-good ul li:before {
   background: url(../img/problems/checked.png) center no-repeat;
   background-size: 70%;
+}
+.materials {
+  background: #ffffff url(../img/feedback/feedback-bg.jpg) center no-repeat;
+  background-size: cover;
+}
+.materials-slider {
+  padding-top: 5rem;
+}
+.materials img {
+  display: block;
+  margin: 0 auto;
+}
+.materials-link {
+  color: #46b814;
+  border-bottom: 1px dotted #46b814;
+  font-size: 1.9rem;
+}
+.materials-link:hover {
+  color: #348a0f;
+}
+.materials-offer {
+  margin-top: 4rem;
+}
+/* Посмотрите как мы работаем */
+.tour {
+  background: #ffffff url(../img/excurs/exscurs-bg.jpg) center no-repeat;
+  background-size: cover;
+}
+.tour-subtitle {
+  font-size: 2.2rem;
+}
+.tour-btn {
+  padding: 1rem 1rem;
+}
+/* Дополнительные услуги */
+.upsell {
+  background: #286b0a;
+}
+.upsell img {
+  width: 100%;
+  max-width: 30rem;
+  display: inline-block;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
+.upsell-block {
+  min-height: 15rem;
+  text-align: center;
+  color: #ffffff;
+}
+/* Контакты */
+.contacts {
+  background: #ffffff url(../img/contacts/contacts-bg.jpg) center no-repeat;
+  background-size: cover;
+}
+.contacts h2 {
+  font-family: 'Nexa_bold', sans-serif;
+}
+.contacts p {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.contacts-link {
+  display: inline-block;
+  color: #1a1820;
+  border-bottom: 1px dotted #1a1820;
+}
+.contacts-link:hover {
+  color: #020203;
+}
+.contacts-form-header {
+  font-size: 1.9rem;
+  font-family: 'Nexa_light', sans-serif;
+  margin-bottom: 3rem;
+}
+footer {
+  padding: 4rem 0;
+}
+.footer-contacts {
+  text-align: center;
+  font-size: 1.9rem;
+  font-family: 'Nexa_light', sans-serif;
+}
+.footer-me {
+  text-align: right;
+  font-size: 1.9rem;
+  font-family: 'Nexa_light', sans-serif;
 }
 /* Оформление всплывающих окон */
 .popup {
@@ -505,6 +607,9 @@ section {
   .all-inclusive .media {
     min-height: 11rem;
   }
+  .problemes-list {
+    min-height: 40rem;
+  }
 }
 @media (max-width: 991px) {
   .main {
@@ -540,6 +645,16 @@ section {
   }
   .hand {
     display: none;
+  }
+  .problemes-list {
+    min-height: auto;
+  }
+  .problemes-women {
+    display: none;
+  }
+  .tour {
+    background: none;
+    background-color: #f5f5f5;
   }
 }
 @media (max-width: 767px) {
